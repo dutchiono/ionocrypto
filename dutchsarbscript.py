@@ -15,8 +15,8 @@ from json import loads
 from decimal import Decimal
 import time
 import random
-from dutchsconfigfile import privkey, sender
-from dutchsconfigaddresses import *
+from walletconfig import *
+from dutchsconfig import *
 map_tokens = map(Web3.toChecksumAddress, loadTokensToArb)
 tokenToArb = list(map_tokens)
 tLL = len(tokenToArb)
@@ -95,7 +95,7 @@ if __name__ == '__main__':
             print(priceList)
             if 1 < 2:
                 print("genius")
-                print(priceList)
+                #print(priceList)
                 print(" ")
                 print(" ")
                 print(" ")
@@ -105,7 +105,7 @@ if __name__ == '__main__':
                     j = i+2
                     #print(priceList[i][0])
                     #print(priceList[i][1])
-                    print(pLL, "pLL")
+                    #print(pLL, "pLL")
                     print(priceList[i][1], priceList[i+1][1])
                     if i < (pLL - 2):
                         print(priceList)
